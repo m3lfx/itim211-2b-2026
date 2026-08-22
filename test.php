@@ -196,6 +196,62 @@
     addFive($orignum);
     print($orignum);
 
+    $users[] = "Bert";
+    $users[] = "Sharon";
+    $users[] = "Betty";
+    $users[] = "Harry";
+    print_r($users);
+
+    foreach ($users as $user) {
+        print "<h1>$user</h1></br>";
+    }
+
+    $first = array("a", "b", "c");
+    $second = array(1, "test", 3, 4.56, true);
+    // $third = array_merge($first, $second);
+    // print_r($third);
+    // foreach ($third as $val) {
+    //     print "$val<BR>";
+    // }
+    // print($third[2]);
+
+    // $character = array(
+    //     "name" => "bob",
+    //     "occupation" => "superhero",
+    //     "age" => 30,
+    //     "special power" => "x-ray vision",
+    //     "name" => "tom",
+
+    // );
+    // print_r($character);
+    // print($character['name']);
+
+    $character = array();
+    $character['name'] = "mike";
+    $character['occupation'] = "superhero";
+    $character['age'] = 30;
+
+    // $character["special powers"] = "x-ray vision";
+    $character["special powers"] = array(
+        "power1" => 'flight',
+        "power2" => "healing"
+    );
+    // print($character['special powers']['power1'][1]);
+    $character['jobs'] = array("reporter", "scientist");
+    // print $character[0] . $character['name'];
+    // print_r($character['jobs'][1]);
+    foreach ($character as $key => $value) {
+        print $key . " " . $value . "<br>";
+    }
+
+    foreach ($character['jobs'] as  $value) {
+        print $value . "<br>";
+    }
+
+    foreach ($character['special powers'] as $key => $value) {
+        print $key . " " . $value . "<br>";
+    }
+
 
 
 
