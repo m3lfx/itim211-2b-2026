@@ -16,7 +16,7 @@ $artists = mysqli_query($conn, $sql);
     <?php
     while ($row = mysqli_fetch_assoc($artists)) {
         echo "<tr>";
-        // echo "<td><img src={$row['img_path']} width='150' height='150' /> </td>";
+        echo "<td><img src={$row['img_path']} width='150' height='150' /> </td>";
         echo "<td>{$row['artist_id']}</td>";
         echo "<td>{$row['artist_name']}</td>";
         echo "<td>{$row['country']}</td>";

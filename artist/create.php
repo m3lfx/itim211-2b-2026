@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <form action="store.php" method="POST">
+    <form action="store.php" method="POST" enctype="multipart/form-data">
         <div class="form-group">
             <label for="exampleInputEmail1">Artist Name</label>
             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
