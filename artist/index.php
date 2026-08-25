@@ -26,3 +26,5 @@ $artists = mysqli_query($conn, $sql);
     }
     ?>
 </table>
+<?php
+include('../includes/footer.php');
