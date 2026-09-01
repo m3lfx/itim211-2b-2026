@@ -1,6 +1,13 @@
 <?php
+session_start();
+var_dump($_SESSION);
+// if (! isset($_SESSION['email'])) {
+//     header("Location: ../user/login.php");
+// }
 include('../includes/header.php');
 require('../includes/config.php');
+
+
 $sql = "SELECT * FROM artists";
 $artists = mysqli_query($conn, $sql);
 ?>

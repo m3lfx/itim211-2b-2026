@@ -1,4 +1,8 @@
 <?php
+session_start();
+if (! isset($_SESSION['email'])) {
+    header("Location: ../user/login.php");
+}
 include('../includes/header.php');
 require('../includes/config.php');
 var_dump($_GET);

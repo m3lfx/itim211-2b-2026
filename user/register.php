@@ -1,4 +1,5 @@
 <?php
+session_start();
 // CREATE TABLE users(
 // user_id INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
 // email VARCHAR(100),
@@ -6,6 +7,7 @@
 // status enum('active','inactive'),
 // created_at DATE
 // )
+var_dump($_SESSION);
 include("../includes/header.php");
 include("../includes/config.php");
 // var_dump($_POST);
