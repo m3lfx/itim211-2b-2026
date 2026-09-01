@@ -24,6 +24,9 @@
 include("../includes/header.php");
 require("../includes/config.php");
 session_start();
+if (! isset($_SESSION['email'])) {
+    header("Location: ../user/login.php");
+}
 $user_id = (int)$_SESSION['user_id'];
 
 ?>
